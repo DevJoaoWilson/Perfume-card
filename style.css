@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Inter:wght@100;200;300;400;500;600&family=Montserrat:wght@500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Inter:wght@100;200;300;400;500;600&family=Montserrat:wght@700&display=swap');
+
+
+:root{
+    ---color-button:#3C8067;
+    ---color-background-html:#F2EBE3;
+    ---color-name:#1C232B;
+    ---color-description:#6C7289;
+    ---color-background:#FFFFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: var(---color-background-html);
+}
+
+main{
+    height: 20vh;
+}
+
+.container{
+    display:grid;
+    margin-left: 25vw;
+    height: 620px;
+    width: 800px;
+    grid-template-columns: repeat(2,1fr);
+    border-radius: 40px;
+    background-color:hsl(0, 0%, 100%);
+}
+
+
+#conteudo{
+   display:flex;
+   flex-direction: column;
+   gap: 2rem;
+   max-width: 250px;
+   margin: 20px;
+}
+
+#conteudo h2{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1.1rem;
+    letter-spacing: 3px;
+    margin-top: 20px;
+    color: var(---color-description);
+}
+
+#conteudo span{
+    font-family:'Fraunces';
+    font-size: 2.5rem;
+}
+
+#conteudo p{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+    color: var(---color-description);
+}
+
+#conteudo article{
+    display:flex;
+}
+
+#conteudo article p{
+    font-family: 'Fraunces';
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(---color-button);
+}
+
+button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    background-color: var(---color-button);
+    color: var(---color-background);
+    font-family: 'Fraunces';
+    font-size: 1.125rem;
+    letter-spacing: 1px;
+    border-radius: 8px;
+}
+
+#conteudo button p{
+    padding: 5px;
+    text-align: center;
+    color: var(---color-background);
+}
